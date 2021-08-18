@@ -26,6 +26,7 @@ def scrape_all():
 
     # end the automated browsing session
     browser.quit()
+    print(data)
     return data 
 
 #insert mars news into a function
@@ -82,7 +83,7 @@ def featured_image(browser):
         return None 
 
     # use the base URL to create an absolute URL
-    img_url = f'https://data-class-jpl-space.s3.amazonaws.com/JPL_Space{img_url_rel}'
+    img_url = f'https://data-class-jpl-space.s3.amazonaws.com/JPL_Space/{img_url_rel}'
     
     return img_url 
 
